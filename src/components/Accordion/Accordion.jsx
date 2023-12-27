@@ -42,7 +42,7 @@ function Accordion() {
 				<div key={i} className='accordion-box'>
 					<div className='question flex items-center relative justify-between ' onClick={() => toggle(i)}>
 						{items.question}
-						{select === i ? <img src='./icon-minus.svg' /> : <img src='./icon-plus.svg' />}
+						{select === i ? <span className='minus'></span> : <span className='plus'></span>}
 					</div>
 					<div className={select === i ? 'content-show ' : 'answer '}>{items.answers}</div>
 					<hr className='horizontal-line' />
