@@ -43,7 +43,9 @@ function Accordion() {
 				<div key={i} className='accordion-box'>
 					<div className='question flex items-center relative justify-between ' onClick={() => toggle(i)}>
 						{items.question}
-						{select === i ? <img src='.\src\assets\images\icon-minus.svg' /> : <img src='.\src\assets\images\icon-plus.svg' />}
+						{select === i ? <img src='/src/assets/images
+/icon-minus.svg' /> : <img src='/src/assets/images
+/icon-plus.svg' />}
 					</div>
 					<div className={select === i ? 'content-show ' : 'answer '}>{items.answers}</div>
 					<hr className='horizontal-line' />
