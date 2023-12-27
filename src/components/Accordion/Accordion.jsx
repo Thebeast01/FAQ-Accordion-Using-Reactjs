@@ -36,14 +36,13 @@ function Accordion() {
 		}
 		setSelect(i);
 	};
-
 	return (
 		<>
 			{data.map((items, i) => (
 				<div key={i} className='accordion-box'>
 					<div className='question flex items-center relative justify-between ' onClick={() => toggle(i)}>
 						{items.question}
-						{select === i ? <img src='src\assets\images\icon-minus.svg' /> : <img src='src\assets\images\icon-plus.svg' />}
+						{select === i ? <img src='./icon-minus.svg' /> : <img src='icon-minus.svg' />}
 					</div>
 					<div className={select === i ? 'content-show ' : 'answer '}>{items.answers}</div>
 					<hr className='horizontal-line' />
